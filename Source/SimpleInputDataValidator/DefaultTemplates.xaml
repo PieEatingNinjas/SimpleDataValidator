@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:local="clr-namespace:SimpleInputDataValidator"
+                    x:Class="SimpleInputDataValidator.DefaultTemplates">
+    <ControlTemplate x:Key="DefaultErrorSummaryTemplate">
+        <StackLayout BindableLayout.ItemsSource="{TemplateBinding ErrorStateManager.AllMessages}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding}" FontSize="Micro" TextColor="Red" />
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ControlTemplate>
+    <ControlTemplate x:Key="DefaultErrorViewTemplate">
+        <Grid IsVisible="{TemplateBinding ErrorState.HasError}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid WidthRequest="2" HorizontalOptions="Fill" Margin="1, 2" BackgroundColor="Red" />
+            <StackLayout Grid.Column="1" BindableLayout.ItemsSource="{TemplateBinding ErrorState.Messages}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding}" FontSize="Micro" TextColor="Red" />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </Grid>
+    </ControlTemplate>
+    <Style TargetType="local:ErrorSummaryView">
+        <Setter Property="ControlTemplate" Value="{StaticResource DefaultErrorSummaryTemplate}" />
+    </Style>
+    <Style TargetType="local:ErrorView">
+        <Setter Property="ControlTemplate" Value="{StaticResource DefaultErrorViewTemplate}" />
+    </Style>
+</ResourceDictionary>
