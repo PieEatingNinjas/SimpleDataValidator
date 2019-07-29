@@ -3,7 +3,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SimpleInputDataValidator
+namespace SimpleInputDataValidator.UI.Forms
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ErrorView : ContentView

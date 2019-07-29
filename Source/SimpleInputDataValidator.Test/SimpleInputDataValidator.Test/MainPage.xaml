@@ -3,9 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:validator="clr-namespace:SimpleInputDataValidator;assembly=SimpleInputDataValidator"
+             xmlns:validatorUI="clr-namespace:SimpleInputDataValidator.UI.Forms;assembly=SimpleInputDataValidator.UI.Forms"
              mc:Ignorable="d"
-             xmlns:local="clr-namespace:SimpleInputDataValidator;assembly=SimpleInputDataValidator"
              x:Class="SimpleInputDataValidator.Test.MainPage">
     <Grid Margin="20, 40">
         <Grid.RowDefinitions>
@@ -19,13 +18,13 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Entry Text="{Binding Input, Mode=TwoWay}" />
-        <validator:ErrorView ErrorState="{Binding ErrorStateManager[Input]}" Grid.Row="1" />
+        <validatorUI:ErrorView ErrorState="{Binding ErrorStateManager[Input]}" Grid.Row="1" />
         <Entry Text="{Binding Input2, Mode=TwoWay}" Grid.Row="2"/>
-        <validator:ErrorView ErrorState="{Binding ErrorStateManager[Input2]}" Grid.Row="3"/>
+        <validatorUI:ErrorView ErrorState="{Binding ErrorStateManager[Input2]}" Grid.Row="3"/>
         <Entry Text="{Binding Input3, Mode=TwoWay}" Grid.Row="4"/>
-        <validator:ErrorView ErrorState="{Binding ErrorStateManager[Input3]}" Grid.Row="5"/>
+        <validatorUI:ErrorView ErrorState="{Binding ErrorStateManager[Input3]}" Grid.Row="5"/>
         <Button Command="{Binding SubmitCommand}" Text="Submit" Grid.Row="6" />
-        <validator:ErrorSummaryView IsVisible="{Binding ShowValidationSummary, Mode=OneWay}"  Grid.Row="7"
+        <validatorUI:ErrorSummaryView IsVisible="{Binding ShowValidationSummary, Mode=OneWay}"  Grid.Row="7"
                                     ErrorStateManager="{Binding ErrorStateManager, Mode=OneWay}"/>
     </Grid>
 </ContentPage>

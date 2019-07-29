@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\SimpleInputDataValidator.UI.Forms\SimpleInputDataValidator.UI.Forms.csproj" />
     <ProjectReference Include="..\..\SimpleInputDataValidator\SimpleInputDataValidator.csproj" />
   </ItemGroup>
 </Project>

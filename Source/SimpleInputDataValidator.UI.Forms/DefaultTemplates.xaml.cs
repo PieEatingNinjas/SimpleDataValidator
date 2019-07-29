@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SimpleInputDataValidator
+namespace SimpleInputDataValidator.UI.Forms
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 

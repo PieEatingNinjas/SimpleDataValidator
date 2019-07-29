@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:DataInputValidator="clr-namespace:SimpleInputDataValidator;assembly=SimpleInputDataValidator"
+             xmlns:validatorUI="clr-namespace:SimpleInputDataValidator.UI.Forms;assembly=SimpleInputDataValidator.UI.Forms"
              xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms" 
              xmlns:local="clr-namespace:SimpleInputDataValidator.Test"
              mc:Ignorable="d"
              x:Class="SimpleInputDataValidator.Test.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary MergedWith="DataInputValidator:DefaultTemplates"/>
+            <ResourceDictionary MergedWith="validatorUI:DefaultTemplates"/>
             <ControlTemplate x:Key="CustomErrorViewTemplate">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -40,7 +40,7 @@
                     </StackLayout>
                 </Grid>
             </ControlTemplate>
-            <Style TargetType="DataInputValidator:ErrorView">
+            <Style TargetType="validatorUI:ErrorView">
                 <Setter Property="ControlTemplate" Value="{StaticResource CustomErrorViewTemplate}" />
             </Style>
         </ResourceDictionary>

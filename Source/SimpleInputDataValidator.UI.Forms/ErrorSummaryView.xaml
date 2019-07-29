@@ -4,7 +4,5 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Name="root"
-             x:Class="SimpleInputDataValidator.ErrorView" 
-             IsVisible="{Binding ErrorState.HasError, Source={x:Reference root}, FallbackValue=false}">
+             x:Class="SimpleInputDataValidator.UI.Forms.ErrorSummaryView">
 </ContentView>

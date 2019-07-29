@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                    xmlns:local="clr-namespace:SimpleInputDataValidator"
-                    x:Class="SimpleInputDataValidator.DefaultTemplates">
+                    xmlns:local="clr-namespace:SimpleInputDataValidator.UI.Forms"
+                    x:Class="SimpleInputDataValidator.UI.Forms.DefaultTemplates">
     <ControlTemplate x:Key="DefaultErrorSummaryTemplate">
         <StackLayout BindableLayout.ItemsSource="{TemplateBinding ErrorStateManager.AllMessages}">
             <BindableLayout.ItemTemplate>

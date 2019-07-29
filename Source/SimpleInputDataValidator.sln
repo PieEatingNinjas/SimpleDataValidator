@@ -9,9 +9,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInputDataValidator.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInputDataValidator.Test.iOS", "SimpleInputDataValidator.Test\SimpleInputDataValidator.Test.iOS\SimpleInputDataValidator.Test.iOS.csproj", "{E6B5A92A-0D39-4052-81FD-F5827FC45595}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInputDataValidator.Test", "SimpleInputDataValidator.Test\SimpleInputDataValidator.Test\SimpleInputDataValidator.Test.csproj", "{569CB0CB-F4CA-4C0B-A733-7C09DCF6BABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleInputDataValidator.Test", "SimpleInputDataValidator.Test\SimpleInputDataValidator.Test\SimpleInputDataValidator.Test.csproj", "{569CB0CB-F4CA-4C0B-A733-7C09DCF6BABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInputDataValidator", "SimpleInputDataValidator\SimpleInputDataValidator.csproj", "{CCCE46F7-C8B2-495A-8FC3-5D8E2ABB09E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleInputDataValidator", "SimpleInputDataValidator\SimpleInputDataValidator.csproj", "{CCCE46F7-C8B2-495A-8FC3-5D8E2ABB09E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInputDataValidator.UI.Forms", "SimpleInputDataValidator.UI.Forms\SimpleInputDataValidator.UI.Forms.csproj", "{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{31B85043-741C-4A05-A565-4A3CD0EF052C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{C7C57AD8-24C0-45AF-A5FF-E0B4F028C385}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -197,9 +203,40 @@ Global
 		{CCCE46F7-C8B2-495A-8FC3-5D8E2ABB09E3}.Release|x64.Build.0 = Release|Any CPU
 		{CCCE46F7-C8B2-495A-8FC3-5D8E2ABB09E3}.Release|x86.ActiveCfg = Release|Any CPU
 		{CCCE46F7-C8B2-495A-8FC3-5D8E2ABB09E3}.Release|x86.Build.0 = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|x64.Build.0 = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Debug|x86.Build.0 = Debug|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|ARM.Build.0 = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|iPhone.Build.0 = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|x64.ActiveCfg = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|x64.Build.0 = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|x86.ActiveCfg = Release|Any CPU
+		{15662728-5E0E-44D8-97BF-7C7AFBCC58C2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8144026A-0D0B-4338-BFBC-50FDFBF827C5} = {C7C57AD8-24C0-45AF-A5FF-E0B4F028C385}
+		{D19C445A-DB86-4BC5-AB73-2549DA762671} = {C7C57AD8-24C0-45AF-A5FF-E0B4F028C385}
+		{E6B5A92A-0D39-4052-81FD-F5827FC45595} = {C7C57AD8-24C0-45AF-A5FF-E0B4F028C385}
+		{569CB0CB-F4CA-4C0B-A733-7C09DCF6BABA} = {C7C57AD8-24C0-45AF-A5FF-E0B4F028C385}
+		{C7C57AD8-24C0-45AF-A5FF-E0B4F028C385} = {31B85043-741C-4A05-A565-4A3CD0EF052C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E1B9008-8E4E-462D-AE01-516DC0C5D5E7}
